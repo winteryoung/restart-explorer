@@ -1,13 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'uac_sh'
+require 'restart-explorer'
 
-# EXE_PACKAGE_DIRECTIVE
+kill "explorer"
+spawn "explorer"
 
-options = {
-  :pause => true,
-  :terminal => true,
-  :cd => true
-}
-
-UacSh.run options, ARGV
+kill "wxwork"
+spawn '"c:\Program Files (x86)\WXWork\WXWork.exe"'

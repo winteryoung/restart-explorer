@@ -12,7 +12,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/winteryoung/restart-explorer'
   s.license     = 'Apache-2.0'
   s.executables = [ "restart-explorer" ]
-  s.add_runtime_dependency "ffi", ["~> 1.9"]
-  s.add_development_dependency "ocra", ["~> 1.3"]
   s.add_development_dependency "winter_rakeutils", ["~> 0.2"]
 end
